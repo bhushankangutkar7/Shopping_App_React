@@ -1,0 +1,55 @@
+.nav-link:hover {
+  color:rgb(235, 255, 255);
+}
+
+
+.nav-link:active {
+  color: rgb(235, 255, 255);
+  font-weight: bolder;
+  font-display: dark;
+}
+
+.homeParagraph {
+  height: 800px;
+}
+
+.productDetailsMainContainer {
+  height: 800px;
+  
+}
+
+.ulImages {
+  border: 0.5px rgb(212, 208, 208) solid;
+  border-radius: 3%;
+  background-color: white;
+}
+
+.thumbnailImg {
+  margin: 10;
+  background-color: white;
+  z-index: 2;
+}
+
+.imagesContainer ul li:hover{
+  transition: ease-in 0.3s;
+  transition: ease-out 0.3s;
+  transform-origin: left ;
+  margin-top: 0;
+  scale: 10;
+  background-color: white;
+  z-index: 5;
+}
+
+
+.visibility{
+  /* display: none; */
+  opacity: 10%;
+}
+
+.emiOptions {
+  font-size: 17.5px;
+}
+
+.productDescription {
+  margin-bottom: 1px;
+}
