@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -19,6 +20,11 @@ const Home = () => {
         always here to help with any questions or concerns. Explore, discover,
         and shop with confidence — because at ShopAll, we make shopping simple,
         exciting, and tailored to you!
+        <br/> 
+        <br/> 
+        <NavLink to="/products" className="btn btn-warning">
+          Shop Now
+        </NavLink>
       </p>
       <br />
     </div>

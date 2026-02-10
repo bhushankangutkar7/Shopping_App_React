@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getProductById } from "../services/ProductServices";
+import { getProductById } from "../../services/ProductServices";
 import { NavLink } from "react-router-dom";
 
 const ProductDetails = () => {
@@ -30,7 +30,7 @@ const ProductDetails = () => {
   }
 
   return (
-    <div className="container productDetailsMainContainer">
+    <div className="container productDetailsMainContainer p-4">
       {prodDetails != null && (
         <>
           <h2 className="productDetails">Product Details</h2>
@@ -59,7 +59,7 @@ const ProductDetails = () => {
               </ul>
             </div>
 
-            <div>
+            <div className="m-4 p-3">
               <div id="productDes">
                 <h2 className="productName">{prodDetails.title}</h2>
                 <p className="productDescription">{prodDetails.description}</p>

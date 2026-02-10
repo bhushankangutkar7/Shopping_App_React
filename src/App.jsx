@@ -1,11 +1,11 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Header from "./components/Header.jsx";
-import Home from "./components/Home.jsx";
-import Products from "./components/Products.jsx";
+import Home from "./pages/Home/Home.jsx";
+import Products from "./pages/Products/Products.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer.jsx";
-import ProductDetails from "./components/ProductDetails.jsx";
+import ProductDetails from "./pages/Products/ProductDetails.jsx";
 import "./App.css";
 
 function App() {
@@ -21,8 +21,6 @@ function App() {
               path="/product-details/:id"
               element={<ProductDetails />}
             ></Route>
-            <Route path="/products/category/:slug"></Route>
-            <Route path="/products/search?q=:searchQuery"></Route>
           </Routes>
         </section>
         <Footer className="mt-auto"></Footer>
