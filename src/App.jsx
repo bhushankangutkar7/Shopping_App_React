@@ -11,7 +11,7 @@ import "./App.css";
 function App() {
   return (
     <div className="d-flex flex-column justify-content-around">
-      <Router>
+      <Router basename="/Shopping_App_React">
         <Header />
         <section>
           <Routes>
