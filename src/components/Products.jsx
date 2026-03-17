@@ -41,15 +41,17 @@ const Products = () => {
 
   return (
     <>
-      <div className="container row gap-3 m-3">
+      <div className="products-container-fluid">
         <h2>New Arrivals</h2>
-        {prodData.length > 0 ? (
-          prodData.map((product) => (
-            <ProductList key={product.id} product={product} />
-          ))
-        ) : (
-          <h4>Loading Data...</h4>
-        )}
+        <div className="d-flex flex-wrap justify-content-center align-items-center w-100 m-3" style={{gap: '1.5rem'}}>
+          {prodData.length > 0 ? (
+            prodData.map((product) => (
+              <ProductList key={product.id} product={product} />
+            ))
+          ) : (
+            <h4>Loading Data...</h4>
+          )}
+        </div>
       </div>
     </>
   );

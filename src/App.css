@@ -1,0 +1,39 @@
+/* Prevent horizontal overflow for Products route */
+.products-container-fluid {
+	width: 100vw;
+	max-width: 100vw;
+	overflow-x: hidden;
+	margin: 0 auto;
+	padding: 0 8px;
+	min-height: 60vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	min-width: 0;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+body, html, #root, .app-main-container {
+	width: 100vw;
+	max-width: 100vw;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.app-main-container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.app-content {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+}

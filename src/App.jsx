@@ -10,10 +10,10 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="d-flex flex-column justify-content-around">
+    <div className="app-main-container">
       <Router>
         <Header />
-        <section>
+        <main className="app-content">
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="products" element={<Products />}></Route>
@@ -24,8 +24,8 @@ function App() {
             <Route path="/products/category/:slug"></Route>
             <Route path="/products/search?q=:searchQuery"></Route>
           </Routes>
-        </section>
-        <Footer className="mt-auto"></Footer>
+        </main>
+        <Footer />
       </Router>
     </div>
   );
