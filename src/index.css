@@ -14,8 +14,8 @@
 }
 
 .productDetailsMainContainer {
-  height: 800px;
-  
+  margin-top: 2.4rem;
+  height: 900px;
 }
 
 .ulImages {
@@ -35,9 +35,9 @@
   transition: ease-out 0.3s;
   transform-origin: left ;
   margin-top: 0;
-  scale: 10;
+  scale: 7;
   background-color: white;
-  z-index: 5;
+  z-index: 15;
 }
 
 

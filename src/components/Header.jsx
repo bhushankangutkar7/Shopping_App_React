@@ -29,7 +29,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/">
-          <h4 className="siteHeading"> ShopAll </h4>
+          <h4 className="siteHeading" style={{ marginLeft: '1rem' }}> ShopAll </h4>
         </NavLink>
         <button
           className="navbar-toggler"
@@ -81,7 +81,7 @@ const Header = () => {
               </ul>
             </li>
           </ul>
-          <form className="d-flex" onSubmit={handleSearch}>
+          <form className="d-flex search-form" onSubmit={handleSearch}>
             <input
               className="form-control me-2"
               type="search"
